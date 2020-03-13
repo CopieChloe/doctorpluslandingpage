@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Doctor Plus - landing page</title>
+    <!-- google fonts css -->
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <!-- font awesome css -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- my css -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- jquery cdn -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- my script -->
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <!-- left to do : 
+    - insert doctor plus <i></i> 
+    - put proper links and form action
+    - play keyframes on icon containers (section : solutions) -->
+    <header>
+        <div class="logo_container">
+            <img src="img/logo-doctorplus-w-sm.png" alt="logo doctor plus">
+        </div>
+        <div class="large_device_menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Utilisation</a>
+                    </li>
+                    <li>
+                        <a href="#">Motifs de consultation</a>
+                    </li>
+                    <li>
+                        <a href="#">Une expérience unique</a>
+                    </li>
+                    <li>
+                        <a href="#">Les médecins</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="burger_menu_container">
+            <div>MENU</div>
+        </div>
+        <div class="large_device_signinup_container">
+            <div class="user_icon_container">
+                <i class="fas fa-user"></i>
+            </div>
+            <div class="signinup_btns_container">
+                <div class="signup_btn_container">
+                    <a href="#">Se connecter</a>
+                </div>
+                <div class="signin_btn_container">
+                    <a href="#">Créer un compte</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="jumbotron">
+            <img class="jumbo_bgi_mobile" src="img/doctorplus-home-wide.jpg" alt="photo de consultation médicale">
+            <img class="jumbo_bgi_medium" src="img/doctorplus-home-medium.jpg" alt="photo de consultation médicale">
+            <div class="jumbo_content">
+                <div class="covid_alert">
+                    <div class="covid_alert_close">X</div>
+                    <div class="covid_alert_content">
+                        <h6>Alerte Coronavirus France</h6>
+                        <p>
+                            Votre téléconsultation est dorénavant remboursée par la sécurité sociale pour tous les
+                            médecins inscrits sur DoctorPlus!
+                        </p>
+                        <p>
+                            Nous mettons notre solution à disposition en accès libre pour tous nos médecins.
+                        </p>
+                    </div>
+                </div>
+                <div class="jumbo_logo_container">
+                    <img src="img/doctorplus-logo.png" alt="logo doctor plus">
+                </div>
+                <div class="baseline">
+                    Consultez votre professionnel de santé par vidéo ou messagerie
+                </div>
+                <div class="jumbo_form_container">
+                    <form action="#" class="jumbo_form">
+                        <div class="select_container">
+                            <img src="img/search.png" alt="">
+                            <select class="jumbo_form_select">
+                                <option selected="true" value="0" disabled>Généraliste, pédiatre, gynécologue...
+                                </option>
+                                <option value="18">Dermatologie et vénérologie</option>
+                                <option value="22">Gériatrie</option>
+                                <option value="27">Kinésithérapeute</option>
+                                <option value="32">Médecine générale</option>
+                                <option value="33">Médecine générale - homéopathie</option>
+                                <option value="35">Médecine physique et de réadaptation</option>
+                                <option value="40">Oncologie</option>
+                                <option value="54">Pédiatrie</option>
+                                <option value="57">Psychiatrie</option>
+                                <option value="58">Psychiatrie option enfant et adolescent</option>
+                                <option value="60">Psychologie</option>
+                                <option value="70">Sage-femme</option>
+                                <option value="71">Nutrition</option>
+                            </select>
+                        </div>
+
+                        <div class="fieldset">
+                            <input type="checkbox" name="frontalier">
+                            <label for="frontalier">Je suis résident au Luxembourg ou travailleur frontalier</label>
+                        </div>
+                        <input class="jumbo_form_submit_btn" type="submit" value="Rechercher">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="praticien">
+            <div class="praticien_content">
+                <h4>Vous êtes praticien?</h4>
+                <p>
+                    Découvrez notre solution de téléconsultation en accès libre et sans engagement.
+                </p>
+                <p>
+                    Inscription en ligne en quelques clics et prise en main immédiate!
+                </p>
+                <p class="strong">
+                    Gagnez du temps médical, dès maintenant.
+                </p>
+                <a class="praticien_link" href="https://test.doctorplus.eu/profesional/">En savoir plus</a>
+            </div>
+        </section>
+        <section class="solutions">
+            <div class="hin-soluciones-box">
+                <h2 id="hom-quehacer">
+                    Pourquoi utiliser DoctorPlus?
+                </h2>
+                <div class="hin-soluciones-sub">
+                    <div class="anim-text-soluciones">
+                        <i class="fas fa-check"></i>
+                        <p>
+                            Prendre rendez-vous. Recevoir l’avis de son médecin ou d’un autre professionnel via une
+                            Consultation Express par messagerie sécurisée.
+                        </p>
+                    </div>
+                    <div class="anim-text-soluciones">
+                        <i class="fas fa-check"></i>
+                        <p>
+                            Réaliser une Vidéo Consultation avec son médecin pour ne pas avoir à se déplacer
+                            systématiquement au cabinet. Bénéficier également d’une prise en charge sous conditions.
+                        </p>
+                    </div>
+                </div>
+                <div class="create_account_btn">
+                    <a href="https://test.doctorplus.eu/paciente/registro-paciente.html" class="btn btn-blue">Créer un
+                        compte</a>
+                </div>
+            </div>
+
+            <div class="container hin-servicios" id="servicios">
+                <div class="okm-row">
+                    <div class="hin-servicios-col">
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title">
+                                <figure class="hin-servicio-icon red anim-bubble">
+                                    <i class="icon-doctorplus-video-call"></i> </figure>
+                                <h4>Vidéo Consultation</h4>
+                            </div>
+                            <div class="hin-servicio-content">
+                                <p>
+                                    Consultez votre médecin de visu et échangez avec lui comme au cabinet. Dans 80% des
+                                    cas, cela devrait être suffisant pour un avis médical ou une consultation de suivi
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title">
+                                <figure class="hin-servicio-icon segundo red anim-bubble">
+                                    <i class="icon-doctorplus-pharmaceutics"></i> </figure>
+                                <h4>Profil de santé et historique de consultations</h4>
+                            </div>
+                            <div class="hin-servicio-content">
+                                <p>
+                                    Centralisez votre info de santé et conservez-la toujours à portée de main
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title-block">
+                                <div class="hin_servicio_title_block_icons">
+                                    <figure class="hin-servicio-icon red anim-bubble">
+                                        <i class="icon-doctorplus-calendar"></i> </figure>
+                                    <figure class="hin-servicio-icon red anim-bubble">
+                                        <i class="icon-doctorplus-search"></i> </figure>
+                                </div>
+                                <h4>Prenez rendez-vous, invitez votre médecin traitant</h4>
+                            </div>
+                            <div class="hin-servicio-content">
+                                <p>
+                                    Invitez votre médecin traitant et les professionnels de santé que vous connaissez.
+                                    Trouvez sinon en quelques clics des professionnels disponibles
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="hin-servicios-mobile-col">
+                        <div class="hin-servicios-mobile-image-box anim-image-servicios">
+                            <img src="img/doctor-plus-mobile.jpg" title='Doctor Plus services' />
+                        </div>
+                    </div>
+                    <div class="hin-servicios-col">
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title">
+                                <figure class="hin-servicio-icon red anim-bubble-6">
+                                    <i class="icon-doctorplus-chat"></i> </figure>
+                                <h4>Avis et conseils</h4>
+                            </div>
+                            <div class="hin-servicio-content">
+                                <p>
+                                    Votre médecin est occupé, vous aussi. Plus dynamique qu’un email… et bien moins
+                                    intrusif qu’une messagerie instantanée
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title no-content">
+                                <figure class="hin-servicio-icon segundo red anim-bubble-7">
+                                    <i class="icon-doctorplus-flag"></i> </figure>
+                                <h4>Notifications et Contrôles</h4>
+                            </div>
+                            <div class="hin-servicio-content">
+                                <p>
+                                    Votre carnet de santé connecté. Recevez rappels de rendez-vous, contrôles et alertes
+                                    de vaccination automatiques
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                        <div class="hin-servicio-row">
+                            <div class="hin-servicio-title-block">
+                                <div class="hin_servicio_title_block_icons block_icons_green">
+                                    <figure class="hin-servicio-icon green anim-bubble-8">
+                                        <i class="icon-doctorplus-pills"></i> </figure>
+                                    <figure class="hin-servicio-icon green anim-bubble-8">
+                                        <i class="icon-doctorplus-share"></i> </figure>
+                                </div>
+                                <span class="hin-ymas">Et bien plus encore !</span>
+                            </div>
+                            <div class="hin-servicio-content no-title">
+                                <p>
+                                    Envoyez à votre médecin une demande de renouvellement d’ordonnance ou recevez
+                                    celle-ci après une vidéo consultation si votre médecin l’estime nécessaire
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+        <section class="hin-solucion-integral" style="padding-bottom:36px;">
+            <div class="hin-solucion-integral-box">
+                <p>DoctorPlus ne doit pas être utilisé pour traiter des problèmes médicaux mettant en jeu le diagnostic
+                    vital du patient ou dans des situations d’urgence et autres cas pouvant conduire à une détérioration
+                    rapide de l’état du patient.</p>
+
+
+                <p>L’utilisation de la télémédecine est recommandée pour les affections fréquentes du quotidien, les
+                    conseils et avis relatifs à la santé et aux traitements en cours, le suivi des patients après
+                    consultation au cabinet, notamment pour les pathologies chroniques.</p>
+
+
+            </div>
+        </section>
+        <section class="hin-soluciones home-francia" id="comparativo">
+            <div class="hin-soluciones-box hin-soluciones-box2">
+                <div class="col-comparativo anim-text-comparativo">
+
+                    <h2 class="red">
+                        <i class="fas fa-times"></i>
+                        Motifs de consultation NON traités</h2>
+                    <ul>
+                        <li>Après un accident</li>
+                        <li>Après une électrocution</li>
+                        <li>Brulures modérées ou importantes</li>
+                        <li>Convulsions / Epilepsie</li>
+                        <li>Diagnostique complexe</li>
+                        <li>Difficultés pour respirer</li>
+                        <li>Douleurs importantes</li>
+                        <li>Empoisonnement, intoxication</li>
+                        <li>Engourdissement, paralysie subite</li>
+                        <li>Forte douleur dans la poitrine ou du bras gauche</li>
+                        <li>Fracture ouverte</li>
+                        <li>Hémorragie ou saignements importants</li>
+                        <li>Inflammation pulmonaire</li>
+                        <li>Lésions graves de la tête, du cou ou du dos</li>
+                        <li>Perte de liquide importante</li>
+                        <li>Perte ou troubles de la conscience</li>
+                        <li>Problème cardiaque</li>
+                        <li>Réactions allergiques (pb cardio-vasculaire, étouffement)</li>
+                        <li>Urgence médicale, risque vital</li>
+                        <li>Vomissements incessants</li>
+                    </ul>
+                </div>
+                <div class="col-comparativo anim-text-comparativo">
+
+                    <h2 class="green">
+                        <i class="fas fa-check"></i>
+                        Motifs de consultation traités</h2>
+                    <ul>
+                        <li>Allergies</li>
+                        <li>Assistance patient en voyage</li>
+                        <li>Asthme</li>
+                        <li>Addictions</li>
+                        <li>Conjonctivites</li>
+                        <li>Consultations psychologiques, soutien</li>
+                        <li>Diarrhée</li>
+                        <li>Douleurs chroniques</li>
+                        <li>Fièvre</li>
+                        <li>Grippe</li>
+                        <li>Infections urinaires</li>
+                        <li>Problèmes de peau, éruptions cutanées</li>
+                        <li>Problèmes pédiatriques du quotidien</li>
+                        <li>Renouvèlement Ordonnance</li>
+                        <li>Rhumes</li>
+                        <li>Sinusites</li>
+                        <li>Suivi affections chroniques</li>
+                        <li>Suivi consultation cabinet</li>
+                        <li>Suivi traitements et médication</li>
+                        <li>Consultation pour avis médical</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="hin-beneficios" id="beneficios">
+            <h2>Une expérience unique</h2>
+            <div class="hin-beneficios-box">
+                <img class="hin-img-rsp-swap hin-beneficios-image" src="img/beneficios-home-wide.jpg" />
+                <div class="hin-beneficios-content">
+                    <div class="container hin-beneficios-list">
+                        <div class="okm-row">
+
+                            <div class="hin-beneficios-col anim-beneficios">
+                                <div class="hin-beneficios-icon">
+                                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/home/marco-legal-icon.png"
+                                        title='Cadre légal et sécurisé' />
+                                </div>
+                                <h4>Cadre légal et sécurisé</h4>
+                                <p>
+                                    Les consultations et données personnelles de santé sont traitées et conservées en
+                                    conformité avec les normes en vigueur pour la confidentialité et protection des
+                                    données de santé.
+                                </p>
+                            </div>
+
+                            <div class="hin-beneficios-col anim-beneficios">
+                                <div class="hin-beneficios-icon">
+                                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/home/atencion-calificada-icon.png"
+                                        title='Un médecin qui exerce en cabinet' />
+                                </div>
+                                <h4>Un médecin qui exerce en cabinet</h4>
+                                <p>
+                                    Votre médecin ou un autre Professionnel disponible vous suit via Consultation
+                                    Express ou Vidéo Consultation.
+                                </p>
+                            </div>
+
+                            <div class="hin-beneficios-col anim-beneficios">
+                                <div class="hin-beneficios-icon">
+                                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/home/abono-consultas-icon.png"
+                                        title='Consultations à distance' />
+                                </div>
+                                <h4>Consultations à distance</h4>
+                                <p>
+                                    Un compte en accès libre. Vous ne payez qu'en fonction des consultations que vous
+                                    réalisez aux tarifs publiés par les Professionnels. Pour les résidents français,
+                                    bénéficiez d'un remboursement par la Sécu, sous respect de certaines conditions.
+                                </p>
+                            </div>
+
+                            <div class="hin-beneficios-col anim-beneficios">
+                                <div class="hin-beneficios-icon">
+                                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/home/prevencion.png"
+                                        title='Accès aux soins et Prévention' />
+                                </div>
+                                <h4>Accès aux soins et Prévention</h4>
+                                <p>
+                                    Un meilleur accès à votre médecin pour vous aider à prendre les bonnes décisions au
+                                    bon moment.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <section class="hin-profesionales" id="profesionales-de-la-red">
+            <h2 id="hom-profesionales" class="hin-profesionales-title profesionales-anim-trg">Retrouvez vos médecins et
+                autres professionnels de santé sur DoctorPlus</h2>
+            <img class="hin-profesionales-img" src="img/profesionnals.jpg" title='Les Professionnels' />
+
+            <div class="hin-profesionales-content">
+
+                <div class="hin-profesionales-banner">
+                    <p class="anim-profesionale-text">
+                        Consultez en toute confiance. Les médecins et professionnels de santé inscrits sur DoctorPlus
+                        ont fait l’objet d’une vérification préalable à leur inscription.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="okm-container hom-soporte">
+            <h4 id="hom-soporte">Support</h4>
+            <figure>
+                <img width="70" style="border:0px;" id="dc_ImgStatus" src="img/support.png" />
+            </figure>
+            <p>Vous avez besoin d'aide?</p>
+            <p class="hom_soporte_ultimo_p">Nous sommes là pour vous aider</p>
+            <div class="hom-soporte-row">
+                <div class="hom-soporte-col-x2">
+                    <a class="email_contact_link" href="mailto:support@doctorplus.eu">
+                        <figure><i class="fas fa-envelope"></i></figure>
+                        <label>
+                            <div>Ecrivez-nous</div>
+                            <span>support@doctorplus.eu</span>
+                        </label>
+                    </a>
+                </div>
+            </div>
+            <div class="hom-soporte-row contact_form_btn">
+                <div class="hom-soporte-col-x2">
+                    <div class="email_contact_link">
+                        <figure><i class="fas fa-paper-plane"></i></figure>
+                        <label>
+                            <div>Contactez-nous</div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="okm-container hom-contacto contact_form_container">
+            <div class="hom-servicios-bottom-action-box">
+                <i class="icon-doctorplus-arrow-down"></i>
+            </div>
+            <div class="hom-contacto-box">
+                <div id="hom-contacto-box" class="hom-contacto-box">
+                    <form id="f_contacto" name="hom-contacto"
+                        action="https://test.doctorplus.eu/enviar_mail_contacto.do" method="POST"
+                        onsubmit="return false;">
+                        <div class="hom-form-row">
+                            <div class="hom-form-col-x2">
+                                <label>Prénom<span>*</span></label>
+                                <input type="text" name="nombre" required="required">
+                            </div>
+                            <div class="hom-form-col-x2">
+                                <label>Nom de famille<span>*</span></label>
+                                <input type="text" name="apellido" required="required">
+                            </div>
+                        </div>
+                        <div class="hom-form-row">
+                            <div class="hom-form-col-x2">
+                                <label>Email<span>*</span></label>
+                                <input id="email_contacto" type="text" name="email" required="required">
+                            </div>
+                            <div class="hom-form-col-x2">
+                                <label>Téléphone</label>
+                                <input type="text" id="telefono_contacto" name="telefono">
+                            </div>
+                        </div>
+                        <div class="hom-form-row">
+                            <div class="hom-form-col-x1">
+                                <label>Message</label>
+                                <textarea name="mensaje" required="required"></textarea>
+                            </div>
+                        </div>
+                        <div class="okm-row">
+                            <div class="mapc-registro-form-row">
+
+                                <div class="g-recaptcha text-center"
+                                    data-sitekey="6LcOi7sUAAAAALWGUEU-TwX0bUafB3eJfmKc1c94"></div>
+                            </div>
+                        </div>
+                        <div class="hom-form-row hom-form-action">
+                            <input type="submit" id="btnEnviarMailContacto" class="btn-default" value="Envoyer" />
+                        </div>
+                    </form>
+                </div>
+                <div id="hom-contacto-msg" class="hom-contacto-msg">
+                    <p>
+                        Consultation envoyée<br>
+                        Nous revenons très vite vers vous!
+                    </p>
+                    <p>
+                        L'équipe DoctorPlus
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <img class="footer-2-banner"
+            src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/footer-banner.jpg" title="DoctorPlus" />
+        <div class="okm-container footer-2-inner">
+            <div class="okm-row okm_row_footer">
+                <div class="footer-col-3">
+                    <a href="mailto:support@doctorplus.eu">
+                        <figure><i class="fas fa-envelope"></i></figure>
+                        <span>support@doctorplus.eu</span>
+                    </a>
+                </div>
+                <div class="footer-col-3">
+                    <figure><i class="fas fa-phone"></i></figure>
+                    <span>Tel. + 33 (0)6 09 81 69 34</span>
+                </div>
+                <div class="footer-col-3">
+                    <figure><i class="fas fa-map-marker-alt"></i></figure>
+                    <span>2 bld Henri Becquerel 57970</span>
+                    <span>Yutz (France)</span>
+                </div>
+
+            </div>
+            <div class="okm-row footer_partners">
+                <div class="footer-col-3 text-center">
+                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/logo_synergie_small.png"
+                        title="Synergie">
+                </div>
+                <div class="footer-col-3 text-center">
+                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/logo_lorntech_small.png"
+                        title="Lorntech">
+                </div>
+                <div class="footer-col-3 text-center">
+                    <img src="https://test.doctorplus.eu/xframework/app/themes/dp02/imgs/Logo_France_Digital.jpg"
+                        title="France Digital" style="margin-top: 60px;">
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-2 footer_users">
+            <div class="okm-container footer-2-inner">
+                <div class="okm-row">
+                    <div class="col-xs-12 text-center">
+                        Utilisateurs France :<br>
+                        <a href="https://www.conseil-national.medecin.fr/annuaire" target="_blank">Annuaire des
+                            médecins
+                            du CNOM</a> / <a href="http://www.ordre-chirurgiens-dentistes.fr/annuaire/"
+                            target="_blank">Annuaire des Chirurgiens-dentistes de l’ONCD</a> / <a
+                            href="https://www.conseil-national.medecin.fr/" target="_blank">Ordre National des
+                            Médecins</a> / <a href="http://www.ordre-chirurgiens-dentistes.fr/"
+                            target="_blank">Ordre
+                            National des Chirurgiens-Dentistes</a>
+                        <br><br><br>
+                        Utilisateurs Luxembourg:<br>
+                        <a href="http://www.collegemedical.lu/Fr/Professionnels/" target="_blank">Annuaire du
+                            Collège médical</a> / <a href="http://www.collegemedical.lu/" target="_blank">Collège
+                            médical</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="okm-row footer_conditions">
+            <div class="footer-col-3 text-center footer_conditions_line">
+                <a href="https://test.doctorplus.eu/Mentions_legales_et_CGUSV.pdf"
+                    title="Conditions d’utilisation des services">Conditions d’utilisation des services</a>
+            </div>
+            <div class="footer-col-3 text-center footer_conditions_line">
+                <a href="https://test.doctorplus.eu/Notice_d_information_et_de_consentement_DP.pdf"
+                    title="Notice d’information et de consentement">Notice d’information et de consentement</a>
+            </div>
+            <div class="footer-copy text-right footer_conditions_line">Copyright © 2020 DoctorPlus Tous droits réservés</div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
